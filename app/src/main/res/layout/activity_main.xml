@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/getId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:text="Get City ID"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/byName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="-13dp"
+        android:text="By Name"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/byId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:text="By ID "
+        android:backgroundTint="@color/teal_700"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:id="@+id/datainput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="City Name" />
+
+    <ListView
+        android:id="@+id/weatherList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/datainput" />
+</RelativeLayout>
